@@ -27,6 +27,6 @@ class CashRegister
   def void_last_transaction 
     self.total = self.total - self.last_transaction_total
     self.items.delete_if{|item| item == self.last_transaction_item}
-    return self.total
+    return self.total.to_f
   end 
 end 
