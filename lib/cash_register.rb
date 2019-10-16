@@ -1,3 +1,3 @@
 class CashRegister 
-  attr_accessor :total, :last_transcation
+  attr_accessor :total, :last_transaction
 end 
