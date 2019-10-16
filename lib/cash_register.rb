@@ -23,4 +23,9 @@ class CashRegister
     end 
     return "There is no discount to apply."
   end 
+  
+  def void_last_transaction 
+    self.total = self.total - self.last_transaction_total
+    self.items.delete_if{|item| item == self.last_transaction_item}
+  end 
 end 
